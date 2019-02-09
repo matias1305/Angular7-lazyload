@@ -1,27 +1,66 @@
-# Base
+# Base Angular 7 - `Lazy Load`
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+ Base para comenzar cualquier proyeto de Angular en su versión 7 en este proyecto se estan utilizando librerías tales como
+* `Bootstrap v4.2.1 (Jquery v3.3.1, Popper v1.14.7)`
+* `Animate css v3.7.0`
+* `Fontawesome v5.7.1`
 
-## Development server
+Ademas podemos encontrar implementada una estructura basada en el patrón de diseño `MVC`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Demostración resumida:
+```
 
-## Code scaffolding
+|-- /app
+  |-- /controllers
+    |-- /guards
+    |-- /services
+    |-- controller.module.ts
+  |-- /models
+  |-- /views
+    |-- /app
+    |-- /login
+    |-- /errors
+    |-- /components
+    |-- /pages
+      |-- pages.module.ts
+    |-- /shared
+      |-- shared.module.ts
+  |-- assets
+    |-- /css
+    |-- /js
+    |-- /images
+    |-- /fonts
+  |-- theme
+    |-- _variables.scss
+    |-- _loading-welcome.scss
+    
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Instalaciones necesarias
+Necesitara instalar las siguientes librerias
+```
+$ sudo npm install -g @angular/cli
+$ sudo npm install -g typescript
+```
 
-## Build
+### Instalar dependencias
+```
+$ npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Servidor de pruebas web
+Para levantar el servidor de pruebas web ejecute el siguiente comando:
+```
+$ ng serve -o
+```
 
-## Running unit tests
+-- Generar build de la aplicación
+```
+$ ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Generar versión de producción
+Para generar la versión de producción ejecute los siguientes comandos:
+```
+$ ng build --prod
+```

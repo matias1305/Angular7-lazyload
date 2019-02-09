@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theme/_variables";
+@import "./theme/loading-welcome";
+
+// ---------------------
+// Fonts
+// ---------------------
+html, body {
+  font-family: map-get($fonts, primary), map-get($fonts, secondary), open;
+  color: map-get($colors, text);
+}

@@ -1,14 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Base</title>
+  <title> Angular v7 - Lazy Load [bootstrap v4.2.1] </title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Icon browser -->
+  <link rel="icon" type="image/x-ico" href="./favicon.ico">
+
+  <!------------------------------------>
+  <!--    AGREGANDO LIBRERIAS CSS     -->
+  <!------------------------------------>
+  <!-- animate v3.7.0 -->
+  <link rel="stylesheet" href="./assets/css/animate-v3.7.0.css">
+
+  <!-- fontawesome v5.7.1 -->
+  <link rel="stylesheet" href="./assets/css/fontawesome-v5.7.1.css">
+
+  <!-- bootstrap v4.2.1 -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-v4.2.1.css">
 </head>
 <body>
-  <app-root></app-root>
+  <app-root class="loading-welcome">
+    <div class="bg-loading">
+      <h2 class="animated fadeOut infinite delay-2s"> Nombre de tu proyecto </h2>
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+  </app-root>
+
+  <!------------------------------------>
+  <!--     AGREGANDO LIBRERIAS JS     -->
+  <!------------------------------------>
+  <!-- jquery v3.3.1 -->
+  <script src="./assets/js/jquery-v3.3.1.js"></script>
+  <!-- popper v1.14.7 -->
+  <script src="./assets/js/popper-v1.14.7.js"></script>
+  <!-- bootstrap v4.2.1 -->
+  <script src="./assets/js/bootstrap-v4.2.1.js"></script>
 </body>
 </html>

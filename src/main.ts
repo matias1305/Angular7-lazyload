@@ -8,5 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+
+// TODO: Luego ver si es necesario quitar este time
+setTimeout( () => {
+  platformBrowserDynamic().bootstrapModule(AppModule)
+    .catch(err => console.error('Loading Page',err));
+}, 1500);
